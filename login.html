@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Login to Your Account</h2>
+
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+
+  <script>
+    document.getElementById("loginForm").onsubmit = function(e) {
+      e.preventDefault();
+      const savedEmail = localStorage.getItem("email");
+      const savedPassword = localStorage.getItem("password");
+
+      const enteredEmail = document.getElementById("email").value;
+      const enteredPassword = document.getElementById("password").value;
+
+      if (enteredEmail === savedEmail && enteredPassword === savedPassword) {
+        alert("Login successful!");
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid credentials");
+      }
+    };
+  </script>
+</body>
+</html>
