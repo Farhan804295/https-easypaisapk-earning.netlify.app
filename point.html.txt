@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Easypaisapk</title>
+  <link rel="stylesheet" href="style-v1.css">
+</head>
+<body>
+  <h1>Welcome to Easypaisapk</h1>
+  <a href="login.html" class="btn">Login</a>
+  <a href="signup.html" class="btn">Register</a>
+</body>
+</html>
+  <meta charset="UTF-8">
+  <title>Check Points</title>
+  <link rel="stylesheet" href="style-v1.css">
+</head>
+<body>
+  <h1>Your Current Points</h1>
+  <p>You have 0 Points.</p>
+</body>
+</html>
