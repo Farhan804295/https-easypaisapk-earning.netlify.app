@@ -1,0 +1,13 @@
+easypaisapk/
+│
+├── index.html         ← Home page
+├── register.html      ← Register page
+├── login.html         ← Login page
+├── dashboard.html     ← User dashboard
+├── deposit.html       ← Deposit page
+├── withdraw.html      ← Withdraw page
+├── plans.html         ← Plans display page
+├── referrals.html     ← Referral page
+├── style.css          ← Design (CSS)
+└── js/
+    └── script.js      ← JavaScript (optional for logic)
