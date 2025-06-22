@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Easypaisapk</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('assets/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003b4a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header span {
+      color: #f8aa2b;
+    }
+
+    h1.main-heading {
+      text-align: center;
+      font-size: 28px;
+      color: #000;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      max-width: 90%;
+      margin: 20px auto;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn-login {
+      background-color: #f8aa2b;
+      color: white;
+    }
+
+    .btn-register {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header style="background-color: #003b4a; padding: 10px; text-align: center;">
-    <h1 style="color: white; margin: 0; font-size: 24px;">
-      Easypaisapk <span style="color: #f8aa2b;">.com</span>
-    </h1>
+  <header>
+    <h1>Easypaisapk <span>.com</span></h1>
   </header>
 
-  <!-- Main Banner Section -->
-  <h1>Make money.<br>From anywhere,<br>anytime!</h1>
+  <h1 class="main-heading">
+    Make money.<br>From anywhere,<br>anytime!
+  </h1>
 
-  <p>
+  <p class="description">
     Join now and unlock daily income with exciting bonuses, instant rewards, and simple earning plans starting from just Rs. 120. No experience needed — just sign up and start earning today!
   </p>
 
-  <a href="signup.html" class="btn btn-register">REGISTER</a>
-  <a href="login.html" class="btn btn-login">LOGIN</a>
+  <div class="button-container">
+    <a href="signup.html" class="btn btn-register">REGISTER</a>
+    <a href="login.html" class="btn btn-login">LOGIN</a>
+  </div>
 
 </body>
 </html>
