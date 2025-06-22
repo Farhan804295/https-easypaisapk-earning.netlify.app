@@ -1,25 +1,9 @@
-/* style.css */
-
 body {
-  background-color: #3a5a61;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #f8f8f8;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-h1 {
-  color: #f8aa2b;
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-p {
-  color: #ffffff;
-  font-size: 18px;
-  margin: 20px;
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
 }
 
 .btn {
@@ -36,17 +20,4 @@ p {
 .btn-login {
   background-color: #f8aa2b;
   color: white;
-}
-
-.btn-register {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-body
-
-}
-  background-image: url('assets/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
