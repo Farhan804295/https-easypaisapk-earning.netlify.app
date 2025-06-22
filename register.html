@@ -9,8 +9,8 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      font-family: Arial, sans-serif;
     }
-
     .btn {
       padding: 12px 24px;
       margin: 10px;
@@ -21,64 +21,26 @@
       cursor: pointer;
       display: inline-block;
     }
-
     .btn-register {
-      background-color: #f8aa2b;
+      background-color: #28a745;
       color: white;
-    }
-
-    .form-container {
-      background: white;
-      padding: 20px;
-      max-width: 300px;
-      margin: 100px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    h2, h3 {
-      text-align: center;
-      color: white;
-    }
-
-    .top-buttons {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .top-buttons a {
-      padding: 8px 16px;
-      background: green;
-      color: white;
-      margin: 0 5px;
-      border-radius: 5px;
-      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h2>Welcome to Easypaisapk</h2>
-  <div class="top-buttons">
-    <a href="login.html">Login</a>
-    <a href="register.html">Register</a>
-  </div>
-  <div class="form-container">
-    <h3>Create Account</h3>
+
+  <h2 style="text-align: center; color: white;">Welcome to Easypaisapk</h2>
+
+  <div style="max-width: 300px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px;">
+    <h3 style="text-align: center;">Create Account</h3>
     <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
-      <button class="btn btn-register">Register</button>
+      <input type="text" placeholder="Full Name" style="width: 100%; margin-bottom: 10px;" required>
+      <input type="email" placeholder="Email" style="width: 100%; margin-bottom: 10px;" required>
+      <input type="password" placeholder="Password" style="width: 100%; margin-bottom: 10px;" required>
+      <input type="password" placeholder="Confirm Password" style="width: 100%; margin-bottom: 10px;" required>
+      <button class="btn btn-register" style="width: 100%;">Register</button>
     </form>
   </div>
+
 </body>
 </html>
