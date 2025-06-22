@@ -1,27 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Register - Easypaisapk</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('assets/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .btn-register {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      width: 300px;
+      margin: 100px auto;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header style="background-color: #003b4a; padding: 10px; text-align: center;">
-    <h1 style="color: white; margin: 0; font-size: 24px;">
-      Easypaisapk <span style="color: #f8aa2b;">.com</span>
-    </h1>
-  </header>
-
-  <!-- Registration Form -->
-  <div style="max-width: 300px; margin: 50px auto; background: rgba(255,255,255,0.9); padding: 20px; border-radius: 10px;">
-    <h2 style="text-align:center;">Register</h2>
+  <div class="form-container">
+    <h2>Create Account</h2>
     <form>
-      <input type="text" placeholder="Full Name" style="width:100%; padding:10px; margin-bottom:10px;" required>
-      <input type="email" placeholder="Email" style="width:100%; padding:10px; margin-bottom:10px;" required>
-      <input type="password" placeholder="Password" style="width:100%; padding:10px; margin-bottom:10px;" required>
-      <button class="btn btn-register" style="width: 100%;">Register</button>
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <input type="password" placeholder="Confirm Password" required><br>
+      <button class="btn btn-register">Register</button>
     </form>
   </div>
 
