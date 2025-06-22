@@ -1,84 +1,57 @@
-/* Background */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-image: url('assets/bg.jpg');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
-/* Header */
 header {
-  background-color: #003840;
-  padding: 10px 0;
-}
-
-header h1 {
+  background-color: #003b4f;
+  padding: 15px 0;
   font-size: 24px;
-  margin: 0;
 }
 
-header .white {
-  color: white;
-}
-
-header .orange {
-  color: orange;
-}
-
-/* Main heading */
-.main-heading {
-  font-size: 32px;
-  font-weight: bold;
+.hero h2 {
+  font-size: 30px;
   margin-top: 50px;
-  line-height: 1.4;
   color: orange;
 }
 
-/* Description */
-.description {
+.hero p {
   font-size: 16px;
   color: white;
-  margin: 20px auto;
-  max-width: 90%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
 }
 
-/* Buttons */
 .buttons {
   margin-top: 30px;
 }
 
 .btn {
-  padding: 12px 24px;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
   display: inline-block;
-  transition: background-color 0.3s ease;
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-.btn-register {
+.register {
   background-color: transparent;
-  border: 2px solid white;
   color: white;
+  border: 2px solid white;
 }
 
-.btn-register:hover {
-  background-color: white;
-  color: #003840;
-}
-
-.btn-login {
+.login {
   background-color: orange;
   color: white;
-}
-
-.btn-login:hover {
-  background-color: #cc7a00;
 }
