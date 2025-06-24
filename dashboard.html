@@ -1,26 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head><!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Home - Easypaisapk</title>
-  <link rel="stylesheet" href="style-v1.css">
-</head>
-<body>
-  <h1>Welcome to Easypaisapk</h1>
-  <a href="login.html" class="btn">Login</a>
-  <a href="signup.html" class="btn">Register</a>
-</body>
-</html>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard - Easypaisapk</title>
-  <link rel="stylesheet" href="style-v1.css">
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-  <h1>Your Dashboard</h1>
-  <p>Balance: Rs. 0</p>
-  <a href="point.html" class="btn">Check Points</a>
-  <a href="withdraw.html" class="btn">Withdraw</a>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Easypaisapk <span>.com</span></div>
+    <div class="menu">&#9776;</div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Dashboard</h1>
+    <p>Home - Dashboard</p>
+  </section>
+
+  <!-- Buttons -->
+  <section class="main-buttons">
+    <button class="btn deposit">💰 Deposit Money</button>
+    <button class="btn withdraw">💸 Withdraw Money</button>
+    <button class="btn plans">📋 View Plans</button>
+  </section>
+
+  <!-- Referral Link -->
+  <div class="referral-box">
+    <input type="text" value="https://easypaisapk.com?ref=123456" readonly />
+    <button>📋</button>
+  </div>
+
+  <!-- Balance Info -->
+  <div class="stats">
+    <div class="stat">💳 Current Balance<br><strong>Rs 0.00</strong></div>
+    <div class="stat">💼 Deposit<br><strong>Rs 0.00</strong></div>
+    <div class="stat">🏧 Withdraw<br><strong>Rs 0.00</strong></div>
+    <div class="stat">📊 My Plan<br><strong>N/A</strong></div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <nav class="sidebar">
+    <ul>
+      <li>Dashboard</li>
+      <li>Deposit</li>
+      <li>Withdraw</li>
+      <li>Plan</li>
+      <li>Transactions</li>
+      <li>Referrals</li>
+      <li>Account</li>
+    </ul>
+  </nav>
+
 </body>
 </html>

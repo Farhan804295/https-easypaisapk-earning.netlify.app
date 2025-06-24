@@ -1,16 +1,18 @@
+/* Basic reset and background */
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial;
-  background-image: url('assets/bg.jpg');
+  font-family: Arial, sans-serif;
+  background-image: url('assets/bg.jpg'); /* Make sure bg.jpg is in 'assets' folder */
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
   color: white;
   text-align: center;
   padding-top: 100px;
 }
 
+/* Headings */
 h1 {
   font-size: 32px;
   color: orange;
@@ -18,23 +20,33 @@ h1 {
 
 p {
   font-size: 16px;
-  color: white;
-  max-width: 90%;
+  max-width: 400px;
   margin: 20px auto;
 }
 
+/* Buttons container */
+.buttons {
+  margin-top: 30px;
+}
+
+/* Common button styling */
 .btn {
   display: inline-block;
-  background-color: #1f6c75;
+  background-color: #f16c75;
   color: white;
   padding: 12px 25px;
   margin: 10px;
-  text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
+/* Register button specific */
+.btn.register {
+  background-color: #005a64;
+}
+
+/* Login button specific */
 .btn.login {
   background-color: orange;
-  color: white;
 }
