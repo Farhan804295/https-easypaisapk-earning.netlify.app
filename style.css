@@ -1,13 +1,20 @@
-/* Basic reset and background */
-body {
+/* Global Reset */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background Styling */
+body {
   font-family: Arial, sans-serif;
-  background-image: url('assets/bg.jpg'); /* Make sure bg.jpg is in 'assets' folder */
+  background-image: url('assets/bg.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
+  min-height: 100vh;
   text-align: center;
   padding-top: 100px;
 }
@@ -16,37 +23,98 @@ body {
 h1 {
   font-size: 32px;
   color: orange;
+  margin-bottom: 10px;
 }
 
 p {
   font-size: 16px;
-  max-width: 400px;
-  margin: 20px auto;
+  max-width: 90%;
+  margin: 10px auto 20px auto;
 }
 
-/* Buttons container */
-.buttons {
-  margin-top: 30px;
-}
-
-/* Common button styling */
+/* Common Button Styling */
 .btn {
   display: inline-block;
-  background-color: #f16c75;
-  color: white;
   padding: 12px 25px;
-  margin: 10px;
+  font-size: 16px;
   font-weight: bold;
+  color: white;
+  background-color: #f16c75;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
 }
 
-/* Register button specific */
+/* Button Colors */
 .btn.register {
   background-color: #005a64;
 }
 
-/* Login button specific */
 .btn.login {
   background-color: orange;
+}
+
+.btn.deposit {
+  background-color: #ffaa00;
+}
+
+.btn.withdraw {
+  background-color: #ff6600;
+}
+
+.btn.plans {
+  background-color: #ffbb24;
+}
+
+/* Form Styling (for deposit/withdraw) */
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+input, textarea, select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+}
+
+/* Referral Box */
+.referral-box {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.referral-box input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.referral-box button {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+  .btn {
+    width: 80%;
+  }
 }

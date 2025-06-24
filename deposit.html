@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Withdraw - Easypaisapk</title>
+  <title>Deposit - Easypaisapk</title>
   <link rel="stylesheet" href="dashboard.css" />
   <style>
     body {
@@ -38,6 +38,17 @@
       color: white;
       padding: 30px 10px;
     }
+    .account-info {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      padding: 15px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
     .main-buttons {
       display: flex;
       justify-content: center;
@@ -45,15 +56,15 @@
       flex-direction: column;
       margin-top: 20px;
     }
-    .withdraw-form {
+    .deposit-form {
       background: rgba(255, 255, 255, 0.1);
       padding: 20px;
       border-radius: 10px;
       width: 300px;
       color: white;
     }
-    .withdraw-form input,
-    .withdraw-form select {
+    .deposit-form input,
+    .deposit-form select {
       width: 100%;
       padding: 10px;
       margin-bottom: 15px;
@@ -80,25 +91,37 @@
   </header>
 
   <section class="banner">
-    <h1>Withdraw</h1>
-    <p>Home - Withdraw</p>
+    <h1>Deposit</h1>
+    <p>Home - Deposit</p>
   </section>
 
+  <div class="account-info">
+    <strong>JazzCash:</strong><br>
+    Account Name: Farhan Ali<br>
+    Number: 03256842068<br><br>
+
+    <strong>Easypaisa:</strong><br>
+    Account Name: Muhammad Aslam<br>
+    Number: 03424069842<br><br>
+
+    Please send payment to any account and take a screenshot.
+  </div>
+
   <section class="main-buttons">
-    <form class="withdraw-form">
-      <label>Withdraw to:</label><br />
+    <form class="deposit-form">
+      <label>Select Method:</label><br />
       <select>
         <option>Easypaisa</option>
         <option>Jazzcash</option>
       </select><br />
 
-      <label>Account Number:</label><br />
+      <label>Your Account Number:</label><br />
       <input type="text" placeholder="03xxxxxxxxx" /><br />
 
       <label>Amount:</label><br />
       <input type="number" placeholder="Enter amount" /><br />
 
-      <button type="submit" class="btn">Submit Withdraw</button>
+      <button type="submit" class="btn">Submit Deposit</button>
     </form>
   </section>
 
